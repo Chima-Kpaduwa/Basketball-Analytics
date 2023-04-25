@@ -47,7 +47,7 @@ ggpairs(stats_salary_cor)
 # Below shows the rank of the coefficient of each factors
 cor(stats_salary_cor)[,"salary17_18"]
 
-#Veryfiying the correlation with scatterplot
+#Verifying the correlation with scatterplot
 names(stats_salary)[5] <- "Team"
 plot_ly(data = stats_salary, x = ~salary17_18, y = ~PPG, color = ~Team,
         hoverinfo = "text",
